@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    font-size:100%;
+}
+h1{
+    font-weight: 300;
+}
+h2{
+    font-weight: 300;
+}
+h3{
+    font-weight: 300;
+}
+p{
+
+}
+
+.main-body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/main-Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width:100%;
+    height: 100px;
+    border:2px dashed green;
+    position: fixed;
+    top:0;
+}
+.container{
+    position: sticky;
+    border:2px solid black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+    /* Profile Section */
+
+.profile-section{
+
+    background-color: #fff;
+    height:auto;
+    width:30%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-section h1{
+    font-size:1.5rem;
+    font-weight: 400;
+}
+.profile-section h3{
+    font-size:0.8rem;
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 5px;
+    padding: 2px 5px ;
+    margin:5px 0 7px 0;
+}
+.profile-section ul {
+    display: flex;
+    gap:15px;
+}
+.profile-section ul li{
+    list-style-type: none;
+}
+.profile-section ul li img{
+    width: 15px;
+}
+.profile-section ul li a{
+    background-color: rgba(128, 128, 128, 0.13);
+    display: flex;
+    padding:5px;
+    border-radius: 5px;;
+}
+.profile-contect{
+    background-color: rgba(128, 128, 128, 0.13);
+    border-radius: 5px;
+    margin:10px;
+}
+.profile-section .contect-box{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin:5px;
+}
+.profile-section .contect-box img{
+    width: 25px;
+    height: 25px;
+}
+.profile-contect .contect-box .contect-data h2{
+    font-size:0.8rem;
+}
+.profile-contect .contect-box .contect-data p{
+    font-size:0.6rem;
+}
+.profile-section button{
+    border:none;
+    background-color: rgb(0, 140, 255);
+    color:white;
+    border-radius: 5px;
+    padding:8px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+
+    /* Main Section */
+
+.main-section{
+    background-color: #fff;
+    height: 100px;
+    width:30%;
+    border-radius: 15px;
+}
+
+    /* Menu Section */
+
+.menu-section{
+    background-color: #fff;
+    height: 100px;
+    width:30%;
+    border-radius: 15px;
+}
