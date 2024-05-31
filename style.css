@@ -43,30 +43,44 @@ nav{
 }
 .container{
     position: sticky;
-    border:2px solid black;
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
+    padding:20px;
     gap:10px;
 }
 
     /* Profile Section */
 
 .profile-section{
-
     background-color: #fff;
     height:auto;
-    width:30%;
-    border-radius: 15px;
+    min-width:230px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+}
+.profile-section .mypic{
+    position: absolute;
+    top:-90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.profile-section .mypic img{
+    border-radius: 10px;
+    width:140px;
 }
 .profile-section h1{
-    font-size:1.5rem;
+    font-size:1.3rem;
     font-weight: 400;
+    letter-spacing: -1px;
+    margin-top:50px;
 }
 .profile-section h3{
     font-size:0.8rem;
@@ -94,13 +108,14 @@ nav{
 .profile-contect{
     background-color: rgba(128, 128, 128, 0.13);
     border-radius: 5px;
-    margin:10px;
+    margin:15px;
+    width: 90%;
 }
 .profile-section .contect-box{
     display: flex;
     align-items: center;
     gap:10px;
-    margin:5px;
+    margin:10px 5px;
 }
 .profile-section .contect-box img{
     width: 25px;
@@ -120,14 +135,32 @@ nav{
     padding:8px;
     margin-bottom:10px;
     cursor: pointer;
+    transition:0.5s;
 }
+.profile-section button:hover{
+    border:1px solid rgb(0, 140, 255);
+    background-color: white;
+    color: rgb(0, 140, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* Main Section */
 
 .main-section{
     background-color: #fff;
     height: 100px;
-    width:30%;
+    width:90%;
     border-radius: 15px;
 }
 
@@ -135,7 +168,35 @@ nav{
 
 .menu-section{
     background-color: #fff;
-    height: 100px;
-    width:30%;
+    height: 100%;
+    width:100px;
     border-radius: 15px;
+    
+}
+.menu-section a{
+    text-decoration: none;
+    color:black;
+}
+.menu-section-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    padding:20%;
+    background-color: rgba(128, 128, 128, 0.13);
+    margin:15px;
+    border-radius: 10px;
+    font-size:0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu-section-box:hover{
+    background-color: rgb(0, 140, 255);
+    color:white;
+}
+.menu-section-box i{
+    font-size:1.3rem;
+    margin-bottom:5px;
 }
